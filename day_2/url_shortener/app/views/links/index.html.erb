@@ -1,0 +1,12 @@
+<h2>Generate a shorted url </h2>
+
+<form action="/create_link" method="POST">
+  <div>
+    <label for="original_url">Original URL</label>
+    <input type="text" name="url[original_url]" id="original_url">
+  </div>
+
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <button type="submit">Generate shorted url</button>
+</form>
